@@ -12,13 +12,15 @@
 
 1. Étudiez le contenu du package "m2dl.pcr.akka.helloworld1".
 2. Éxécutez la classe "System" de ce package.
+OK
 3. Étudiez le contenu du package "m2dl.pcr.akka.helloworld2".
 4. Éxécutez la classe "System" de ce package. Comment expliquer le comportement du système observé ?
+Délégation à deux acteurs différents pour "Hello" et "Nom !"
 5. Étudiez le contenu du package "m2dl.pcr.akka.helloworld3".
 6. Éxécutez la classe "System" de ce package. Expliquez le comportement du système observé :
-    - que représentent les objets "hello" et "goodbye" ?
-    - que permet de faire l'exécution de "getContext().unbecome()" ?
-    - que signifie l'utilisation du deuxième paramètre de l'appel à "become" dans la définition de l'objet "hello" ?
+    - que représentent les objets "hello" et "goodbye" ? Différents comportements pour l'acteur
+    - que permet de faire l'exécution de "getContext().unbecome()" ? Dépiler un comportement, donc revenir au précédent
+    - que signifie l'utilisation du deuxième paramètre de l'appel à "become" dans la définition de l'objet "hello" ? False -> pour dépiler tous les comportements empilés ou non (je crois)
 
 #### Exercice 1.2
 
